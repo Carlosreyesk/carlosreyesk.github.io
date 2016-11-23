@@ -89,7 +89,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://localhost:8080/";
+/******/ 	__webpack_require__.p = "https://carlosreyesk.github.io/";
 /******/ })
 /************************************************************************/
 /******/ ([]);
