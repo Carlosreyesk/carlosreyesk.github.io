@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "http://carlosreyesk.github.io",
+  "homepage": "http://carlosreyesk.github.io/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
