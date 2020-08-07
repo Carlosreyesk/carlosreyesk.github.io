@@ -1,1 +1,585 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/build/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/build/logo192.png"/><link rel="manifest" href="/build/manifest.json"/><title>React App</title><link href="/build/static/css/main.5f361e03.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,p=r[0],a=r[1],i=r[2],c=0,s=[];c<p.length;c++)l=p[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,p=1;p<t.length;p++){var a=t[p];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/build/";var p=this.webpackJsonpapp=this.webpackJsonpapp||[],a=p.push.bind(p);p.push=r,p=p.slice();for(var i=0;i<p.length;i++)r(p[i]);var f=a;t()}([])</script><script src="/build/static/js/2.8bc0949e.chunk.js"></script><script src="/build/static/js/main.f4419f83.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Carlos Reyes Kalthoff - Software Developer</title>
+  <link rel="stylesheet" href="assets/css/color.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Inconsolata" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Main menu-->
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        <div class="menu__wrapper d-none d-lg-block col-md-12">
+          <nav class="">
+            <ul>
+              <li><a href="#hello">Hello</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <!-- <li><a href="#blog">blog</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu__wrapper col-md-12 d-lg-none">
+          <button type="button" class="menu__mobile-button">
+            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Main menu-->
+
+<!-- Mobile menu -->
+  <div class="mobile-menu d-lg-none">
+    <div class="container">
+      <div class="mobile-menu__close">
+        <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+      </div>
+      <nav class="mobile-menu__wrapper">
+        <ul>
+          <li><a href="#hello">Hello</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <!-- <li><a href="#blog">blog</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<!-- Mobile menu -->
+
+<!--Header-->
+  <header class="main-header" style="background-image: url(assets/img/glasses.jpg)">
+    <div class="container">
+      <div class="row personal-profile">
+        <div class="col-md-4 personal-profile__avatar">
+          <img class="" src="./assets/img/user.jpg" alt="avatar">
+        </div>
+        <div class="col-md-8">
+          <p class="personal-profile__name">Carlos Reyes Kalthoff_</p>
+          <p class="personal-profile__work">Senior Software Developer</p>
+          <div class="personal-profile__contacts">
+            <dl class="contact-list contact-list__opacity-titles">
+              <dt>Age:</dt>
+              <dd>27</dd>
+              <dt>Phone:</dt>
+              <dd><a href="tel:+50684522929">(506) 8452-2929</a></dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:carlosreyesk@gmail.com">carlosreyesk@gmail.com</a></dd>
+              <dt>Address:</dt>
+              <dd>Rohrmoser, San Jose, Costa Rica</dd>
+            </dl>
+          </div>
+          <p class="personal-profile__social">
+            <a href="https://github.com/Carlosreyesk" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/carlosreyesk" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--Header-->
+
+<!--Hello-->
+  <section id="hello" class="container section">
+    <div class="row">
+      <div class="col-md-10">
+        <h2 id="hello_header" class="section__title">Hi_</h2>
+        <p class="section__description">
+          Full stack developer, with 5+ years of Desktop, Web and Mobile development experience. Strong all around skill set, although oriented towards Front End development. Extremely interested in software building processes and best practices. Comfortable establishing a close relationships with people involved in a project. Healthy enthusiasm, and a knack to work under pressure. Self-improving constantly to stay on the bleeding edge.
+        </p>
+        <!-- <a href="" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="">Download CV</a> -->
+      </div>
+    </div>
+  </section>
+<!--Hello-->
+
+<!--Resume-->
+  <section id="resume" class="container section">
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">education</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Universidad Cenfotec</p>
+          <p class="resume-list__block-date">2015 - 2019</p>
+          <p>
+            Software Engineering
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Florida State Univeristy</p>
+          <p class="resume-list__block-date">2012 - 2014</p>
+          <p>
+            Systems Engineering
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 section__resume resume-list">
+        <h3 class="resume-list_title">employment</h3>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Zarmada</p>
+          <p class="resume-list__block-date">Sep 2017 - Present</p>
+          <p>
+            Senior Software Developer
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">FoundationLab LLC</p>
+          <p class="resume-list__block-date">Jan 2017 - Sep 2017</p>
+          <p>
+            Full Stack Developer
+          </p>
+        </div>
+        <div class="resume-list__block">
+          <p class="resume-list__block-title">Brain Station</p>
+          <p class="resume-list__block-date">Sep 2016 - Dec 2016</p>
+          <p>
+            Immersive Program Intern
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row section__resume progress-list js-progress-list">
+      <div class="col-md-12">
+        <h3 class="progress-list__title">general skills</h3>
+      </div>
+      <div class="col-md-5 mr-auto">
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">React</span>
+            <span class="progress-list__skill-value">100%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" >
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">Angular</span>
+            <span class="progress-list__skill-value">95%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">Node</span>
+            <span class="progress-list__skill-value">95%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">.Net</span>
+            <span class="progress-list__skill-value">90%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 mr-auto">
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">React Native</span>
+            <span class="progress-list__skill-value">90%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">Windows Apps</span>
+            <span class="progress-list__skill-value">85%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">Laravel</span>
+            <span class="progress-list__skill-value">85%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+        <div class="progress-list__skill">
+          <p>
+            <span class="progress-list__skill-title">SQL and Document Databases</span>
+            <span class="progress-list__skill-value">90%</span>
+          </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row section__resume progress-list bullet-list">
+      <div class="col-md-12">
+        <h3 class="progress-list__title">other skills</h3>
+      </div>
+      <div class="col-md-12 list">
+        <span class="bullet">Git</span>
+        <span class="bullet">Sass</span>
+        <span class="bullet">Less</span>
+        <span class="bullet">MongoDB</span>
+        <span class="bullet">SQL Server</span>
+        <span class="bullet">MySQL</span>
+        <span class="bullet">PostgreSQL</span>
+        <span class="bullet">Express</span>
+        <span class="bullet">Flask</span>
+        <span class="bullet">UX/UI</span>
+      </div>
+    </div>
+  </section>
+<!--Resume-->
+
+<!-- Portfolio-->
+  <!-- <section id="portfolio" class="container section">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="portfolio_header" class="section__title">My projects_</h2>
+      </div>
+    </div>
+    <div class="row portfolio-menu">
+      <div class="col-md-12">
+        <nav>
+          <ul>
+            <li><a href="" data-portfolio-target-tag="all">all</a></li>
+            <li><a href="" data-portfolio-target-tag="mobile apps">mobile apps</a></li>
+            <li><a href="" data-portfolio-target-tag="web-sites">web-sites</a></li>
+            <li><a href="" data-portfolio-target-tag="landing-pages">landing pages</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="portfolio-cards">
+      <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/img_project_1_mono.png" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">Mobile and desktop app for London hostel store  </h3>
+          <p class="project-card__description">
+            Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye.
+            Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+            <li>bower</li>
+            <li>grunt</li>
+          </ul>
+          <a href="" class="project-card__link">www.superapp.com</a>
+        </div>
+      </div>
+      <div class="row project-card"  data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="mobile apps">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/img_project_2_mono.png" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">Web app page for trevel company</h3>
+          <p class="project-card__description">
+            Preference any astonished unreserved mrs. Prosperous understood middletons in conviction an
+             uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill from mr.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+            <li>BEM</li>
+            <li>bower</li>
+            <li>grunt</li>
+          </ul>
+          <a href="" class="project-card__link">www.travellend.com</a>
+        </div>
+      </div>
+      <div class="row project-card"  data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="landing-pages">
+        <div class="col-md-6 col-lg-5 project-card__img">
+        <img class="" src="assets/img/img_project_3_mono.png" alt="project-img">
+      </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+        <h3 class="project-card__title">Admin template for Photo Service</h3>
+        <p class="project-card__description">
+          Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye.
+          Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.
+        </p>
+        <p class="project-card__stack">Used stack:</p>
+        <ul class="tags">
+          <li>html5</li>
+          <li>css3</li>
+          <li>JavaScript</li>
+          <li>BEM</li>
+          <li>bower</li>
+          <li>grunt</li>
+        </ul>
+        <a href="" class="project-card__link">www.coolphoto.com</a>
+      </div>
+      </div>
+    </div>
+  </section> -->
+<!--Portfolio-->
+
+<!--Testimonials-->
+  <!-- <div id="testimonials" class="section">
+    <div class="background slider-carousel" style="background-image: url(assets/img/img_bg_main.jpg);">
+      <div class="container">
+        <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="2"></li>
+            <li data-target="#carouselTestimonials" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-10 col-sm-10 col-10 mr-auto ml-auto">
+                  <p class="slider-carousel__title">Antonio Anderson</p>
+                  <p class="slider-carousel__caption">Project: Landin page for travel company</p>
+                  <hr>
+                  <p class="slider-carousel__description">Up or well must less rent read walk so be. Easy
+                    sold at do hour sing spot. Any meant has cease too the decay. Since party burst am
+                    it match. By or blushes between besides offices noisier as. Sending do brought winding
+                    compass in. Easy sold at do hour sing spot less rent read walk so be. Any meant has
+                    cease too the decay. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonials" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonials" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <div class="slider-carousel__circle">
+            <p><i class="fa fa-quote-right" aria-hidden="true"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<!--Testimonials-->
+
+<!--Blog-->
+  <!-- <section id="blog" class="container section">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="blog_header" class="section__title">Latest Posts_</h2>
+      </div>
+    </div>
+
+    <div class="row post-cards">
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_1.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">How to use css-preprocessor</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididunt...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_2.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">How I organize my work with code</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididu...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="blog.html">
+          <div class="post-cards__card">
+            <div class="post-cards__img">
+              <img src="assets/img/img_blog_3.png" alt="blog_img">
+            </div>
+            <div class="post-cards__info">
+              <p class="post-cards__date">October 22, 2017</p>
+              <h3 class="post-cards_title">SVG sprites vs Icon Font</h3>
+              <p class="post-cards_description">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempr incididu...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+<!--Blog -->
+
+<!--Contact-->
+  <div class="background" style="background-image: url(assets/img/waves.jpg)">
+    <div id="contact" class="container section">
+      <div class="row">
+        <div class="col-md-12">
+          <p id="contacts_header" class="section__title">Get in touch_</p>
+        </div>
+      </div>
+      <div class="row contacts">
+        <div class="col-lg-12">
+          <div class="contacts__list">
+            <dl class="contact-list">
+              <dt>Phone:</dt>
+              <dd><a href="tel:82344563333">(506) 8452-2929</a></dd>
+              <dt>Skype:</dt>
+              <dd><a href="skype:carlosreyesk">carlosreyesk</a></dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:carlosreyesk@gmail.com">carlosreyesk@gmail.com</a></dd>
+            </dl>
+          </div>
+          <div class="contacts__social">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/carlosreyesk">Linkedin</a></li>
+              <li><a href="https://github.com/Carlosreyesk">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Contact-->
+
+<!-- Portfolio Modal -->
+  <!-- <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+        <p class="portfolio-modal__title">Mobile and desktop app for London hostel store</p>
+        <img class="portfolio-modal__img" src="assets/img/img_project_1_mono.png" alt="modal_img">
+        <p class="portfolio-modal__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          conse.
+        </p>
+        <div class="portfolio-modal__link">
+          <a href="">www.superapp.com</a>
+        </div>
+        <div  class="portfolio-modal__stack">
+          <p class="portfolio-modal__stack-title">Using stack:</p>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+            <li>bower</li>
+            <li>grunt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- Portfolio Modal -->
+
+  <script src="assets/js/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <script src="assets/js/progress-list.js"></script>
+  <script src="assets/js/section.js"></script>
+  <script src="assets/js/portfolio-filter.js"></script>
+  <script src="assets/js/slider-carousel.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+  <script src="assets/js/contacts.js"></script>
+  <script src="assets/js/mbclicker.min.js"></script>
+  <script src="assets/js/site-btn.js"></script>
+  <script src="assets/js/style-switcher.js"></script>
+</body>
+</html>
