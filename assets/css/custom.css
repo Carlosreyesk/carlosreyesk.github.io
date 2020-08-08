@@ -1,0 +1,24 @@
+.bullet-list .bullet {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto';
+    background: #6d56c1;
+    height: 24px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+.bullet-list .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header:before {
+    background: linear-gradient(54deg,rgba(74,76,179,.85) 34%,hsla(0,34%,71%,.85));
+}
+
+.background:before {
+    background: linear-gradient(54deg,rgba(74,76,179,.90) 34%,hsla(0,34%,71%,.90));
+}
